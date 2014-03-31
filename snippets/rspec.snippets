@@ -1,0 +1,49 @@
+snippet expect "expect"
+expect(${1:subject}).to
+endsnippet
+
+snippet allow "allow"
+allow(${1:subject}).to
+endsnippet
+
+snippet context "context"
+context "${1:context}" do
+$0
+end
+endsnippet
+
+snippet describe "describe"
+describe "${1:description}" do
+$0
+end
+endsnippet
+
+snippet it "it"
+it "${1:does something}" do
+$0
+end
+endsnippet
+
+snippet feature "feature"
+feature "${1:description}" do
+$0
+end
+endsnippet
+
+snippet scenario "scenario"
+scenario "${1:description}" do
+$0
+end
+endsnippet
+
+snippet background "background"
+background do
+$0
+end
+endsnippet
+
+snippet before "before"
+before(${1::each}) do
+  $0
+end
+endsnippet
